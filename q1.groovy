@@ -10,6 +10,16 @@ switch(choice){
 	case 1: print number1 + " + " + number2 + " = ";
 		println number1 + number2;
 		break;
+	case 2: print number1 + " - " + number2 + " = ";
+		println number1 - number2;
+		break;
+	case 3: print number1 + " * " + number2 + " = ";
+		println number1 * number2;
+		break;
+	case 4: print number1 + " / " + number2 + " = ";
+		println number1 / number2;
+		break;	
 	default:
+		println "Error - invalid choice";
 		break;
 }
