@@ -6,7 +6,7 @@ double paid = Double.parseDouble(System.console().readLine());
 double change = paid - due;
 
 int counter = 0;
-println "Change due is " + change + ", made up of: ";
+printf "Change due is %1.2f made up of: \n", change;
 
 while(change>=50){
 	counter++;
