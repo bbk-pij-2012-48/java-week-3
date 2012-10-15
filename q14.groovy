@@ -20,7 +20,7 @@ class Rectangle{
 	}
 	
 	boolean inside(Point a){
-		if(a.x>=upLeft.x && a.x<=downRight.x && a.y<=upLeft.y && a.y<=downRight.y)
+		if(a.x>=upLeft.x && a.x<=downRight.x && a.y<=upLeft.y && a.y>=downRight.y)
 			return true;
 		else
 			return false;
