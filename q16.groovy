@@ -80,7 +80,7 @@ while(!accepted){
 			
 			if(messageTemp=="."){
 				finished = true;
-				message = message.substring(0,message.length-2);
+				message = message.substring(0,message.length()-2);
 			}
 			else
 				message += messageTemp + "\n";
