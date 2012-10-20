@@ -5,6 +5,10 @@ String sender, recipient, command, message = "", messageTemp;
 // Input sender
 while(!accepted){
 	sender = System.console().readLine();
+	if(sender=="QUIT"){
+		println "Bye!";
+		return;
+	}
 	
 	if(sender.length()>=11){
 	// ensures next condition does not use invalid index value
@@ -38,6 +42,10 @@ accepted = false;
 
 while(!accepted){
 	recipient = System.console().readLine();
+	if(recipient=="QUIT"){
+		println "Bye!";
+		return;
+	}
 	
 	if(recipient.length()>=9){
 	// ensures next condition does not use invalid index value
@@ -70,6 +78,10 @@ accepted = false;
 
 while(!accepted){
 	command = System.console().readLine();
+	if(command=="QUIT"){
+		println "Bye!";
+		return;
+	}
 	
 	if(command=="DATA"){
 		accepted = true;
@@ -102,6 +114,8 @@ while(!accepted){
 		println "Bye!";
 		return;
 	}
+	else
+		println "Invalid command"
 }
 		
 
